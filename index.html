@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend{
+            color: blue;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        #name{
+            margin-left: 30px;
+            width: 200px;
+        }
+        #name1{
+            margin-top: 10px;
+            margin-left: 28px;
+            width: 200px;
+        }
+        #name2{
+            margin-top: 10px;
+            margin-left: 33px;
+            width: 200px;
+        }
+        fieldset{
+            margin-bottom: 30px;
+        }
+        #Address{
+            margin-left: 54px;
+            width: 200px;
+        }
+        #city{
+            margin-left: 26px;
+            width: 200px;
+        }
+        p{
+            margin: 5px;
+        }
+        #state{
+            width: 208px;
+            margin-left: 75px;
+        }
+        #code{
+            width: 200px;
+            margin-left: 38px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Personal information</legend>
+       <div class="groupform">
+        <div>
+            <label for="name"><b> *First name:</b></label> 
+            <input type="name" id="name" required>
+        </div>
+        <div>
+            <label for="name">Middle name:</label> 
+            <input type="name" id="name1">
+        </div>
+        <div>
+            <label for="name"><b> *Last name:</b></label> 
+            <input type="name" id="name2" required>
+        </div>
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend>Address</legend>
+    <div class="groupform">
+        <p>
+            <label for="Address">Address:</label> 
+            <input type="Address" id="Address" >
+        </p>
+        <p>
+            <label for="city">City or town:</label> 
+            <input type="city" id="city" >
+        </p>
+        <p>
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option disabled selected>Choose a State</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Poland">Poland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Germany">Germany</option>
+            </select>
+            </p>
+            <p>
+                <label for="zip"><b> *Zip code:</b></label> 
+                <input type="zip" id="code" required>
+            </p>
+    </div>
+
+    </fieldset>
+
+
+
+    </form>
+</body>
+</html>
